@@ -21,6 +21,7 @@ public class Company {
     private String city;
     private String state;
     private ArrayList<Job> jobList;
+    private ArrayList<Recruiter> recruiterList;
     
     /**
      * Constructs a company object
@@ -33,7 +34,7 @@ public class Company {
      * @param jobList
      */
     public Company(String name, String description, String website, String address, String city, String state,
-            ArrayList<Job> jobList) {
+            ArrayList<Job> jobList, ArrayList<Recruiter> recruiterList) {
         setName(name);
         setDescription(description);
         setWebsite(website);
@@ -41,6 +42,7 @@ public class Company {
         setCity(city);
         setState(state);
         setJobList(jobList);
+        setRecruiterList(recruiterList);
     }
     
     /**
@@ -126,5 +128,13 @@ public class Company {
      */
     public void setJobList(ArrayList<Job> jobList) {
         this.jobList = jobList;
-    }    
+    }
+
+	public ArrayList<Recruiter> getRecruiterList() {
+		return recruiterList;
+	}
+
+	public void setRecruiterList(ArrayList<Recruiter> recruiterList) {
+		this.recruiterList = recruiterList;
+	}    
 }

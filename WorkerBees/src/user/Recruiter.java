@@ -11,12 +11,25 @@ import util.ArrayList;
  */
 public class Recruiter {
 	private String name;
+	private Company associatedCompany;
 	private ArrayList<Job> jobList;
 	private String availibility;
 	private String experience;
 	private String bio;
 	private boolean isOnline;
 	
+	public Recruiter(String name, Company associatedCompany, ArrayList<Job> jobList, String availibility,
+			String experience, String bio, boolean isOnline) {
+		super();
+		this.name = name;
+		this.associatedCompany = associatedCompany;
+		this.jobList = jobList;
+		this.availibility = availibility;
+		this.experience = experience;
+		this.bio = bio;
+		this.isOnline = isOnline;
+	}
+
 	public String getName() {
 		return name;
 	}
@@ -52,6 +65,12 @@ public class Recruiter {
 	}
 	public void setOnline(boolean isOnline) {
 		this.isOnline = isOnline;
+	}
+	public Company getAssociatedCompany() {
+		return associatedCompany;
+	}
+	public void setAssociatedCompany(Company associatedCompany) {
+		this.associatedCompany = associatedCompany;
 	}
 
 }
