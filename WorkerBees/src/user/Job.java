@@ -1,7 +1,7 @@
 /**
  * 
  */
-package manager;
+package user;
 
 /**
  * @author Madeline
@@ -21,6 +21,8 @@ public class Job {
 	private String address;
 	/** Description of job */
 	private String description;
+	/** If job is still active */
+	private boolean isActive;
 	
 	/** Constructs a job object with given paramaters 
 	 * @param String category category of the job
@@ -81,6 +83,16 @@ public class Job {
 	public String getDescription() {
 		return description;
 	}
+
+	public boolean isActive() {
+		return isActive;
+	}
+
+	public void setActive(boolean isActive) {
+		this.isActive = isActive;
+	}
+	
+	
 	
 	
 

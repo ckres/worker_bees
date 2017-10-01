@@ -3,6 +3,8 @@
  */
 package manager;
 
+import user.Job;
+
 /**
  * @author Madeline
  * @author Cassie

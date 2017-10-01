@@ -5,8 +5,6 @@ package user;
 
 import java.util.ArrayList;
 
-import manager.Job;
-
 /**
  * @author Madeline
  *
